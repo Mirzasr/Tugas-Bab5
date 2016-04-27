@@ -8,5 +8,15 @@ public class Jaket {
     public int harga[] = new int[3];
     public int total = 0;
 
-
+    public void pesan(int n[]) {
+        jumlah = n;
+        for (int i = 0; i < 3; i++) {
+            if (n[i] > 100) {
+                harga[i] = (hargaSatuan[i] * n[i]) - (diskon[i] * n[i]);
+            } else {
+                harga[i] = (hargaSatuan[i] * n[i]);
+            }
+            total += harga[i];
+        }
+    }
 }
