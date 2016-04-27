@@ -19,8 +19,8 @@ public class Jaket {
             total += harga[i];
         }
     }
-    
-        public void tampilkanProduk() {
+
+    public void tampilkanProduk() {
         System.out.println("Daftar Harga Jaket");
         System.out.println("Nama\tHarga");
         for (int i = 0; i < 3; i++) {
@@ -28,5 +28,15 @@ public class Jaket {
         }
         System.out.println("Pesan > 100 dapat diskon%");
         System.out.println("----------------------------");
+    }
+
+    public void cetakHarga() {
+        System.out.println("------Struk Pembelian-------");
+        System.out.println("Nama\t Jml\tHarga(IDR)");
+        for (int i = 0; i < 3; i++) {
+            System.out.println(produk[i] + "\t " + jumlah[i] + "\t" + harga[i]);
+        }
+        System.out.println("----------------------------");
+        System.out.println("Total Harga: IDR " + total);
     }
 }
