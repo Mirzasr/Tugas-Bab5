@@ -19,4 +19,14 @@ public class Jaket {
             total += harga[i];
         }
     }
+    
+        public void tampilkanProduk() {
+        System.out.println("Daftar Harga Jaket");
+        System.out.println("Nama\tHarga");
+        for (int i = 0; i < 3; i++) {
+            System.out.println(produk[i] + "\tIDR " + hargaSatuan[i]);
+        }
+        System.out.println("Pesan > 100 dapat diskon%");
+        System.out.println("----------------------------");
+    }
 }
